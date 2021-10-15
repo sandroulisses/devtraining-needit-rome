@@ -1,5 +1,6 @@
-var gr = New GlideRecord('incident');
-gr.AddQuery('priority',1);
+var gr = new GlideRecord('incident');
+gr.addQuery('priority',1);
 gr.query();
-While (gr.next())
+while (gr.next()) {
    gs.print(gr.number);
+}
